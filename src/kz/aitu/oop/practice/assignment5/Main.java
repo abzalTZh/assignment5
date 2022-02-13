@@ -23,9 +23,10 @@ public class Main {
 //        controller.updHours("Mark", "Doe", 13.0);
 
 //        System.out.println(controller.hireEmployee("Lisa", "Krakov", "05/07/2000", "SysAdmin", 2020));
-
 //        System.out.println(controller.fireEmployee("Lisa", "Krakov"));
 
+        System.out.println(controller.getEmployee("BackEnd"));
+        System.out.println(controller.searchEmployee("Amanda", "Stews"));
         System.out.println(controller.getAllEmployee());
         System.out.println(controller.getHours());
     }

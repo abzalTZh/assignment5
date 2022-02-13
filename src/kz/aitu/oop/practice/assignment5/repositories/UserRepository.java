@@ -62,7 +62,7 @@ public class UserRepository implements IUserRepository {
         Connection con = null;
         try {
             con = db.getConnection();
-            String sql = "SELECT id, name, surname, dateofbirth, position, employment_year FROM employees WHERE name=?, surname=?";
+            String sql = "SELECT id, name, surname, dateofbirth, position, employment_year FROM employees WHERE name=? AND surname=?";
             PreparedStatement st = con.prepareStatement(sql);
 
             st.setString(1, name);
